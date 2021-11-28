@@ -7,6 +7,8 @@
 - Easter eggs (yay!)
 - 13.7% more Bambi (amazing!)
 
+# THIS IS IN DEVELOPMENT
+
 # Bambi
 this is bambi
 ![Bambi](https://static.wikia.nocookie.net/villainsfanon/images/8/88/NewBambiIdle.gif/revision/latest?cb=20211027161618)
