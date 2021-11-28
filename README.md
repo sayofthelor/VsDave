@@ -1,11 +1,16 @@
 
-## Powered by a heavily modified version of Kade Engine!
-![KadeEngineLogo](https://user-images.githubusercontent.com/26305836/110529589-4b4eb600-80ce-11eb-9c44-e899118b0bf0.png)
+# Dave and Bambi Plus
+![DBPLogo](https://i.imgur.com/UYLgrcM_d.webp?maxwidth=760&fidelity=grand)
+## Features cool features like:
+- Aesthetic enhancements (wow!)
+- Bug fixes (woah!)
+- Easter eggs (yay!)
+- 13.7% more Bambi (amazing!)
 
-## Dave
-this is dave
-![Dave](https://cdn.discordapp.com/attachments/826922537668968478/884915478592643102/this_is_dave.png)
+# Bambi
+this is bambi
+![Bambi](https://static.wikia.nocookie.net/villainsfanon/images/8/88/NewBambiIdle.gif/revision/latest?cb=20211027161618)
 
-say hi to dave
+say hi to bambi
 
 please say hi to him
