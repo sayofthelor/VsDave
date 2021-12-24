@@ -118,25 +118,25 @@ class OptionsMenu extends MusicBeatState
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 2;
 						grpControls.add(ctrl);
+					//case 3:
+						//FlxG.save.data.accuracyDisplay = !FlxG.save.data.accuracyDisplay;
+						//var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "Accuracy " + (FlxG.save.data.accuracyDisplay ? "off" : "on"), true, false);
+						//ctrl.isMenuItem = true;
+						//ctrl.targetY = curSelected - 3;
+						//grpControls.add(ctrl);
 					case 3:
-						FlxG.save.data.accuracyDisplay = !FlxG.save.data.accuracyDisplay;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "Accuracy " + (FlxG.save.data.accuracyDisplay ? "off" : "on"), true, false);
-						ctrl.isMenuItem = true;
-						ctrl.targetY = curSelected - 3;
-						grpControls.add(ctrl);
-					case 4:
 						FlxG.save.data.eyesores = !FlxG.save.data.eyesores;
 						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.eyesores ? 'Eyesores Enabled' : 'Eyesores Disabled'), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 4;
 						grpControls.add(ctrl);
-					case 5:
+					case 4:
 						FlxG.save.data.donoteclick = !FlxG.save.data.donoteclick;
 						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.donoteclick ? "Hitsounds On" : "Hitsounds Off"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 5;
 						grpControls.add(ctrl);
-					case 6:
+					case 5:
 						FlxG.save.data.freeplayCuts = !FlxG.save.data.freeplayCuts;
 						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.freeplayCuts ? "Freeplay Cutscenes On" : "Freeplay Cutscenes Off"), true, false);
 						ctrl.isMenuItem = true;

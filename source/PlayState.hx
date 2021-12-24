@@ -170,6 +170,7 @@ class PlayState extends MusicBeatState
 	var talking:Bool = true;
 	var songScore:Int = 0;
 	var scoreTxt:FlxText;
+	var scoreTxtTween:FlxTween; // I swear to fuck if this breaks something
 
 	var GFScared:Bool = false;
 
@@ -640,9 +641,9 @@ class PlayState extends MusicBeatState
 				preload('dave/redsky_insanity');
 		}
 
-		scoreTxt = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 150, healthBarBG.y + 40, 0, "", 20);
-		if (!FlxG.save.data.accuracyDisplay)
-			scoreTxt.x = healthBarBG.x + healthBarBG.width / 2;
+        scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, “”, 20); // stolen from psych engine :troll:
+		//if (!FlxG.save.data.accuracyDisplay)
+			//scoreTxt.x = healthBarBG.x + healthBarBG.width / 2;
 		scoreTxt.setFormat(Paths.font("comic.ttf"), 20, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
 		scoreTxt.borderSize = 1.5;
@@ -3095,6 +3096,16 @@ class PlayState extends MusicBeatState
 		{
 			FlxG.camera.zoom += 0.015;
 			camHUD.zoom += 0.03;
+		}
+		if (curStep % 2 == 0) // thanks shadow mario, we gucci right?
+		{
+		    if(scoreTxtTween != null) {
+				scoreTxtTween.cancel();
+			}
+		    scoreTxtTween = FlxTween.tween(scoreTxt.scale, {x: 1, y: 1}, 0.2, {
+				onComplete: function(twn:FlxTween) {
+					scoreTxtTween = null;
+				}
 		}
 		switch (curSong.toLowerCase())
 		{
